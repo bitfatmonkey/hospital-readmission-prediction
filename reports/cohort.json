@@ -1,0 +1,56 @@
+{
+  "prediction_time": "hospital discharge",
+  "positive_outcome": "recorded readmission <30 days",
+  "raw_rows": 101766,
+  "excluded_rows": 2447,
+  "eligible_rows": 99319,
+  "eligible_patients": 69980,
+  "eligible_target_counts": {
+    "NO": 52516,
+    ">30": 35500,
+    "<30": 11303
+  },
+  "exclusions": [
+    {
+      "code": 9,
+      "reason": "Admitted as an inpatient to this hospital: not a completed discharge",
+      "rows": 21
+    },
+    {
+      "code": 11,
+      "reason": "Expired",
+      "rows": 1642
+    },
+    {
+      "code": 12,
+      "reason": "Still a patient: not a completed discharge",
+      "rows": 3
+    },
+    {
+      "code": 13,
+      "reason": "Hospice at home",
+      "rows": 399
+    },
+    {
+      "code": 14,
+      "reason": "Hospice in a medical facility",
+      "rows": 372
+    },
+    {
+      "code": 19,
+      "reason": "Expired at home",
+      "rows": 8
+    },
+    {
+      "code": 20,
+      "reason": "Expired in a medical facility",
+      "rows": 2
+    },
+    {
+      "code": 21,
+      "reason": "Expired, location unknown",
+      "rows": 0
+    }
+  ],
+  "transfers": "Retained; destination may represent continuation of care rather than a new admission"
+}

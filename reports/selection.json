@@ -1,0 +1,13 @@
+{
+  "model": "XGBoost",
+  "criterion": "mean training cross-validation average precision",
+  "threshold_rule": "maximum validation F2; highest threshold breaks ties",
+  "thresholds": {
+    "Dummy": 0.11380297643394267,
+    "Logistic Regression": 0.08891049387680909,
+    "Random Forest": 0.09957395959828823,
+    "XGBoost": 0.0935702919960022
+  },
+  "test_used_for_selection": false,
+  "training_fingerprint": "2e46d3d1223e10e63275012730c02595d3d349b995bf641e42a3c75263d74a3b"
+}

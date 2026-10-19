@@ -1,0 +1,31 @@
+{
+  "scope": "training partition only",
+  "rows": 63566,
+  "patients": 44880,
+  "missing_values": {
+    "weight": 61548,
+    "medical_specialty": 31058,
+    "payer_code": 25180,
+    "race": 1473,
+    "diag_3": 923,
+    "diag_2": 242,
+    "diag_1": 11
+  },
+  "lab_not_measured": {
+    "max_glu_serum": 60274,
+    "A1Cresult": 52816
+  },
+  "target_counts": {
+    "NO": 33725,
+    ">30": 22607,
+    "<30": 7234
+  },
+  "constant_predictors": [
+    "acetohexamide",
+    "examide",
+    "citoglipton",
+    "glimepiride-pioglitazone",
+    "metformin-pioglitazone"
+  ],
+  "unknown_gender_rows": 2
+}

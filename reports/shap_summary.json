@@ -1,0 +1,52 @@
+{
+  "model": "XGBoost",
+  "sample_size": 80,
+  "feature_count": 185,
+  "output_scale": "log odds",
+  "additivity_verified": true,
+  "pipeline_predictions_verified": true,
+  "input_representation": "original sparse model input; dense data used only for plotting",
+  "top_features": [
+    {
+      "feature": "numeric__number_inpatient",
+      "mean_absolute_shap": 0.24209913611412048
+    },
+    {
+      "feature": "categorical__discharge_disposition_id_1",
+      "mean_absolute_shap": 0.17152859270572662
+    },
+    {
+      "feature": "numeric__prior_visit_total",
+      "mean_absolute_shap": 0.11010082066059113
+    },
+    {
+      "feature": "numeric__active_diabetes_medications",
+      "mean_absolute_shap": 0.06148139387369156
+    },
+    {
+      "feature": "numeric__time_in_hospital",
+      "mean_absolute_shap": 0.05808106064796448
+    },
+    {
+      "feature": "numeric__num_lab_procedures",
+      "mean_absolute_shap": 0.04990757256746292
+    },
+    {
+      "feature": "categorical__diag_1_group_Circulatory",
+      "mean_absolute_shap": 0.04933619871735573
+    },
+    {
+      "feature": "numeric__age_midpoint",
+      "mean_absolute_shap": 0.04225820675492287
+    },
+    {
+      "feature": "numeric__num_medications",
+      "mean_absolute_shap": 0.042022522538900375
+    },
+    {
+      "feature": "numeric__number_diagnoses",
+      "mean_absolute_shap": 0.03687875717878342
+    }
+  ],
+  "interpretation": "Predictive associations, not treatment effects or causal explanations"
+}

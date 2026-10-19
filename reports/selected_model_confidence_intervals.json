@@ -1,0 +1,17 @@
+{
+  "roc_auc": {
+    "lower": 0.6582753106275854,
+    "upper": 0.6820149731622037,
+    "resamples": 200
+  },
+  "average_precision": {
+    "lower": 0.21101076623296017,
+    "upper": 0.2454475830997158,
+    "resamples": 200
+  },
+  "brier_score": {
+    "lower": 0.09299451096434261,
+    "upper": 0.09929078568631176,
+    "resamples": 200
+  }
+}
