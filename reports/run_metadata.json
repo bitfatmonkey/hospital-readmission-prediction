@@ -1,0 +1,31 @@
+{
+  "config": {
+    "seed": 42,
+    "test_folds": 5,
+    "validation_folds": 5,
+    "cv_folds": 3,
+    "search_iterations": 4,
+    "threads": 2,
+    "bootstrap_iterations": 200,
+    "shap_rows": 80,
+    "missingness_threshold": 0.95,
+    "selection_metric": "mean training cross-validation average precision",
+    "threshold_rule": "maximum validation F2; highest threshold breaks ties"
+  },
+  "python": "3.11.17",
+  "packages": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "xgboost-cpu": "3.2.0",
+    "shap": "0.51.0",
+    "scipy": "1.17.1"
+  },
+  "training_fingerprint": "2e46d3d1223e10e63275012730c02595d3d349b995bf641e42a3c75263d74a3b",
+  "archive_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+  "elapsed_seconds": 730.783382053,
+  "synthetic_data_used": false,
+  "dataset_downloaded": false,
+  "test_evaluation_completed": true,
+  "shap_completed": true
+}

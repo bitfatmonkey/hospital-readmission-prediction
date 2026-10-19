@@ -1,0 +1,54 @@
+{
+  "train": {
+    "encounters": 63566,
+    "patients": 44880,
+    "positives": 7234,
+    "prevalence": 0.11380297643394267,
+    "encounter_id_sha256": "8e50d29b60aa8b51185d0837ad8616f3b051e33538370e6c72c06378299bef44"
+  },
+  "validation": {
+    "encounters": 15892,
+    "patients": 11137,
+    "positives": 1809,
+    "prevalence": 0.113830858293481,
+    "encounter_id_sha256": "5925f24fcd3df132486c19643ff405f21358d79d3acbd4dfc9fbe9e52cea7b61"
+  },
+  "test": {
+    "encounters": 19861,
+    "patients": 13963,
+    "positives": 2260,
+    "prevalence": 0.11379084638235738,
+    "encounter_id_sha256": "5f8bbc8dbb708ea009d50a28a682a949c8117a7f1331a273b7e294ea67435217"
+  },
+  "pairwise_patient_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "training_cv": [
+    {
+      "fold": 1,
+      "fit_rows": 42376,
+      "validation_rows": 21190,
+      "fit_patients": 29947,
+      "validation_patients": 14933,
+      "patient_overlap": 0
+    },
+    {
+      "fold": 2,
+      "fit_rows": 42378,
+      "validation_rows": 21188,
+      "fit_patients": 29953,
+      "validation_patients": 14927,
+      "patient_overlap": 0
+    },
+    {
+      "fold": 3,
+      "fit_rows": 42378,
+      "validation_rows": 21188,
+      "fit_patients": 29860,
+      "validation_patients": 15020,
+      "patient_overlap": 0
+    }
+  ]
+}

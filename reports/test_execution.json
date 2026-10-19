@@ -1,0 +1,9 @@
+{
+  "tests": 35,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 100.994,
+  "python": "3.11.17",
+  "environment": "separate clean virtualenv installed from the hashed requirements.lock"
+}

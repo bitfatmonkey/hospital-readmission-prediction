@@ -1,0 +1,15 @@
+# Direct dependencies; requirements.lock pins all transitive dependencies and hashes.
+pandas==3.0.6
+numpy==2.4.6
+scikit-learn==1.9.1
+xgboost-cpu==3.2.0
+shap==0.51.0
+matplotlib==3.11.2
+seaborn==0.13.2
+scipy==1.17.1
+ucimlrepo==0.0.7
+pytest==9.1.1
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.4.0
+setuptools==84.0.0

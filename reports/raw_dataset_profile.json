@@ -1,0 +1,119 @@
+{
+  "archive": "/workspace/hospital-readmission-prediction/data/raw/diabetes+130-us+hospitals+for+years+1999-2008.zip",
+  "archive_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+  "zip_crc_verified": true,
+  "shape": [
+    101766,
+    50
+  ],
+  "feature_shape": [
+    101766,
+    47
+  ],
+  "columns": [
+    "encounter_id",
+    "patient_nbr",
+    "race",
+    "gender",
+    "age",
+    "weight",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "admission_source_id",
+    "time_in_hospital",
+    "payer_code",
+    "medical_specialty",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "diag_1",
+    "diag_2",
+    "diag_3",
+    "number_diagnoses",
+    "max_glu_serum",
+    "A1Cresult",
+    "metformin",
+    "repaglinide",
+    "nateglinide",
+    "chlorpropamide",
+    "glimepiride",
+    "acetohexamide",
+    "glipizide",
+    "glyburide",
+    "tolbutamide",
+    "pioglitazone",
+    "rosiglitazone",
+    "acarbose",
+    "miglitol",
+    "troglitazone",
+    "tolazamide",
+    "examide",
+    "citoglipton",
+    "insulin",
+    "glyburide-metformin",
+    "glipizide-metformin",
+    "glimepiride-pioglitazone",
+    "metformin-rosiglitazone",
+    "metformin-pioglitazone",
+    "change",
+    "diabetesMed",
+    "readmitted"
+  ],
+  "missing_values": {
+    "race": 2273,
+    "weight": 98569,
+    "payer_code": 40256,
+    "medical_specialty": 49949,
+    "diag_1": 21,
+    "diag_2": 358,
+    "diag_3": 1423
+  },
+  "total_missing_values": 192849,
+  "not_measured_lab_results": {
+    "max_glu_serum": 96420,
+    "A1Cresult": 84748
+  },
+  "patient_ids": {
+    "unique_patients": 71518,
+    "patients_with_multiple_encounters": 16773,
+    "repeat_patient_rows": 30248,
+    "maximum_encounters_per_patient": 40,
+    "unique_encounters": 101766,
+    "duplicate_encounter_ids": 0,
+    "missing_patient_ids": 0,
+    "missing_encounter_ids": 0
+  },
+  "duplicate_rows": 0,
+  "target_distribution": {
+    "NO": {
+      "count": 54864,
+      "percent": 53.9119
+    },
+    ">30": {
+      "count": 35545,
+      "percent": 34.9282
+    },
+    "<30": {
+      "count": 11357,
+      "percent": 11.1599
+    }
+  },
+  "missing_targets": 0,
+  "mapping_shapes": {
+    "admission_type_id": [
+      8,
+      2
+    ],
+    "discharge_disposition_id": [
+      30,
+      2
+    ],
+    "admission_source_id": [
+      25,
+      2
+    ]
+  }
+}

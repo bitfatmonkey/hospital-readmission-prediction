@@ -1,0 +1,30 @@
+name: Real-data tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: "2"
+      OPENBLAS_NUM_THREADS: "2"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.17"
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.23"
+      - run: uv pip install --system --require-hashes --only-binary :all: -r requirements.lock
+      - run: uv pip install --system --no-deps --no-build-isolation -e .
+      - run: uv pip check --system
+      - run: python -m pytest -q --junitxml=test-results.xml
+      - run: python -m hospital_readmission.documentation --check
+      - run: python -m hospital_readmission.data > /dev/null

@@ -1,0 +1,16 @@
+{
+  "models_recomputed_without_refitting": [
+    "Dummy",
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost"
+  ],
+  "metrics_match": true,
+  "patient_separation_verified": true,
+  "notebooks_executed": 3,
+  "executed_code_cells": 18,
+  "readme_matches_reports": true,
+  "archive_unchanged": true,
+  "dataset_downloaded": false,
+  "synthetic_data_used": false
+}

@@ -1,0 +1,35 @@
+{
+  "Dummy": {
+    "best_params": {},
+    "cv_average_precision": 0.11380297566934057,
+    "cv_ap_std": 1.7183648047967243e-05,
+    "training_seconds": 11.485967329000232
+  },
+  "Logistic Regression": {
+    "best_params": {
+      "model__class_weight": null,
+      "model__C": 1.0
+    },
+    "cv_average_precision": 0.21060919676845788,
+    "cv_ap_std": 0.0054405264935403624,
+    "training_seconds": 94.20650016399986
+  },
+  "Random Forest": {
+    "best_params": {
+      "model__max_depth": 12,
+      "model__class_weight": null
+    },
+    "cv_average_precision": 0.21432064746937637,
+    "cv_ap_std": 0.004601663795929536,
+    "training_seconds": 477.43206241300004
+  },
+  "XGBoost": {
+    "best_params": {
+      "model__scale_pos_weight": 1.0,
+      "model__max_depth": 5
+    },
+    "cv_average_precision": 0.22059558781217428,
+    "cv_ap_std": 0.004498955186146775,
+    "training_seconds": 68.83439867400011
+  }
+}

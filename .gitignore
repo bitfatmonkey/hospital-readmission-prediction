@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.jupyter/
+*.egg-info/
+build/
+dist/
+artifacts/
+data/processed/
+data/interim/
+predictions/
+reports/*.log
+reports/*.xml
+test-results.xml
+
+# Keep the original archive; read its CSV members without extracting duplicates.
+data/raw/*.csv
+data/raw/dataset_diabetes/
